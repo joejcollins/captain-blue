@@ -1,5 +1,21 @@
 image:
   file: .gitpod.Dockerfile
   context: .
+
+tasks:
+  # Ensure the that Python environment is ready
+  - name: Initialize the Virtual Environment
+    init: |
+      virtualenv .venv
+      . .venv/bin/activate
+      pip install --upgrade pip setuptools
+      pip install -Ur requirements.txt
+      python ./src/manage.py migrate
+      python ./src/manage.py runserver
+    command: |
+      gp sync-done python-is-ready # an arbitrary tag
+
 ports:
-- port: 8080
+- port: 8000
+  onOpen: open-browser
+  visibility: public

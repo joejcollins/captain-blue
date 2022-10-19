@@ -1,5 +1,7 @@
 # captain-blue
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://gitlab.com/joejcollins/captain-blue/-/tree/main])
+
 ## Name
 Choose a self-explaining name for your project.
 
