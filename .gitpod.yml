@@ -1,7 +1,4 @@
-image:
-  file: .gitpod.Dockerfile
-  context: .
-
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   # Ensure the that Python environment is ready
   - name: Initialize the Virtual Environment
@@ -15,6 +12,7 @@ tasks:
     command: |
       gp sync-done python-is-ready # an arbitrary tag
 
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
 - port: 8000
   onOpen: open-browser
