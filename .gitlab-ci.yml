@@ -25,6 +25,7 @@ cache:
 
 before_script:
   - python --version  # For debugging
+  - curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
   - pip install virtualenv
   - virtualenv .venv
   - source .venv/bin/activate

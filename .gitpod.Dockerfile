@@ -3,7 +3,7 @@ FROM gitpod/workspace-python-3.10
 USER gitpod
 
 # Install custom tools, runtime, etc. using apt-get
-# For example, the command below would install "bastet" - a command line tetris clone:
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 #
 # RUN sudo apt-get -q update && \
 #     sudo apt-get install -yq bastet && \
