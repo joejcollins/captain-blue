@@ -6,6 +6,7 @@ tasks:
   # Ensure the that Python environment is ready
   - name: Initialize the Virtual Environment
     init: |
+      git config credential. helper store
       virtualenv .venv
       . .venv/bin/activate
       pip install --upgrade pip setuptools

@@ -33,7 +33,7 @@ before_script:
 
 test:
   script:
-    - pytest
+    - pytest ./tests
 
 deploy:
   stage: deploy
