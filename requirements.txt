@@ -1,4 +1,5 @@
 black==22.10.0
 Django==4.1.2
 flake8==5.0.4
+pytest==7.2.0
 UnleashClient==5.4.0
